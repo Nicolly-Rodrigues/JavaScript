@@ -4,10 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impares apenas</title>
-    <script type="text/javascript" src="js/impares.js"></script>
+
 </head>
 <body>
-    <h1>Mostrando números Ímpares</h1>
-    <div id ="resultado"></div>
+    <h1>Mostrando números impares</h1>
+    <div id="resultado"></div>
+    <script>
+        let resultadoDiv =document.getElementById("resultado")
+        let numerosImpares ="";
+
+        for(let i=0; i<=10; i++){
+             if (i % 2 == 1){
+            numerosImpares += i + "<br>";
+    }
+}
+resultadoDiv.innerHTML = numerosImpares;
+    </script>
 </body>
 </html>
